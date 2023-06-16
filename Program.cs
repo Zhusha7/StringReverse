@@ -4,8 +4,8 @@
     {
         static string? ReverseString(string? s)
         {
-            if (s == null)
-                return null;
+            if (string.IsNullOrEmpty(s))
+                return s;
             char[] temp = s.ToCharArray();
             for (int i = 0; i < temp.Length/2; i++)
             {
